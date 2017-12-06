@@ -1213,7 +1213,9 @@ fieldset[disabled] .stigmod-input {
  *
  * --------------------------------------------- */
 #stigmod-pg-user{
-
+    /*padding-left: 10%;
+    padding-right: 10%;
+*/
 }
 /* 用户名 */
 #stigmod-pg-user #stigmod-username {

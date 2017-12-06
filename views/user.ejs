@@ -1,9 +1,10 @@
 <%include header.ejs%>
-
 <div id="stigmod-pg-user">
     <div class="row">
         <!-- 左侧信息栏 -->
-        <div class="col-xs-3">
+        <div class="col-xs-2"></div>
+
+        <div class="col-xs-2">
             <img src="/images/user_avatar_default.jpg" class="img-responsive img-rounded"/>
             <br />
             <div id="stigmod-username">Li Ergou</div>
@@ -14,18 +15,9 @@
                 <p><span class="glyphicon glyphicon-link stigmod-detailinfo-icon"></span>&nbsp;userUrl</p>
                 <div><span class="glyphicon glyphicon-time stigmod-detailinfo-icon"></span>&nbsp;Joined&nbsp;on&nbsp;2017-07-03</div>
             </div>
-            <hr />
-            <div class="row"> <!-- 三个坑待填 -->
-                <div class="col-xs-4">
-                </div>
-                <div class="col-xs-4">
-                </div>
-                <div class="col-xs-4">
-                </div>
-            </div>
         </div>
         <!-- 右侧 Model 栏 -->
-        <div class="col-xs-9">
+        <div class="col-xs-6">
             <!-- Model 搜索栏 -->
             <div class="row">
                 <div class="col-xs-12">
@@ -50,41 +42,42 @@
             </div>
             <hr />
             <div id="stigmod-model-info-container">
-                <!-- ModelInfo 显示组件位置 -->
+                <div class="stigmod-modelshow">
+                    <div class="row">
+                        <div class="col-xs-9 stigmod-modelshow-title">
+                            <a href="">A Dream in Red Mansions</a>
+                        </div>
+                        <div class="col-xs-3 stigmod-modelshow-info">
+                            <i class="fa fa-language"></i>
+                            <span class="stigmod-modelshow-language">en</span> &nbsp;&nbsp;
+                            <span class="glyphicon glyphicon-th-large"></span>
+                            <span class="stigmod-modelshow-class">4</span> &nbsp;&nbsp;
+                            <span class="glyphicon glyphicon-random"></span>
+                            <span class="stigmod-modelshow-relation">1</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-10 stigmod-modelshow-description">
+                            A Dream in Red Mansions
+                        </div>
+                        <div class="col-xs-2">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 stigmod-modelshow-date">
+                            Updated on Jul 3, 2017 10:09:35 AM
+                        </div>
+                    </div>
+                    <hr/>
+                </div>
             </div>
         </div>
+        <div class="col-xs-2"></div>
+
     </div>
 </div>
-
 <!-- ModelInfo 显示组件 -->
-<script type="text/template" id="template-model-info">
-    <div class="stigmod-modelshow">
-        <div class="row">
-            <div class="col-xs-9 stigmod-modelshow-title">
-                <a href=""></a>
-            </div>
-            <div class="col-xs-3 stigmod-modelshow-info">
-                <i class="fa fa-language"></i>
-                <span class="stigmod-modelshow-language"></span> &nbsp;&nbsp;
-                <span class="glyphicon glyphicon-th-large"></span>
-                <span class="stigmod-modelshow-class"></span> &nbsp;&nbsp;
-                <span class="glyphicon glyphicon-random"></span>
-                <span class="stigmod-modelshow-relation"></span>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-10 stigmod-modelshow-description">
-            </div>
-            <div class="col-xs-2">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 stigmod-modelshow-date">
-            </div>
-        </div>
-        <hr />
-    </div>
-</script>
+
 
 
 <%include footer.ejs%>
